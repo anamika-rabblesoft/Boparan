@@ -30,7 +30,6 @@ h3 {
 h5 {
   font-size: 40px;
 }
-
 .btn-primary {
   background-color: #ec008c !important;
   border-color: #ec008c !important ;
@@ -263,13 +262,17 @@ h5 {
   transition: 0.3s;
   z-index: 999;
 }
-
+.card .card-image {
+  height: auto !important;
+}
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
   top: 15px;
   right: 15px;
 }
-
+.card-header {
+  color: #05579e;
+}
 .navbar-mobile ul {
   display: block;
   position: absolute;
@@ -475,6 +478,106 @@ h6,
 .card .content .back .tem-img {
   border-radius: 100%;
 }
+
+* {
+  box-sizing: border-box;
+}
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 10px;
+  padding: 8px 12px;
+  margin-left: 10px;
+  position: absolute;
+  width: 30%;
+  border-radius: 1rem;
+  text-align: center;
+}
+.links a {
+  font-size: 30px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #05579e;
+  line-height: 1;
+  padding: 10px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin: 20px;
+}
+.newsletter a {
+  color: #05579e;
+  font-size: 20px;
+}
+.newsletter {
+  font-size: 20px;
+  font-weight: 600;
+}
+.header-title {
+  border-left: 10px solid #05579e;
+  background-color: #f5f5f5;
+
+  color: #05579e;
+}
+#gallery {
+  background-color: #dedede;
+}
+
+/* stories */
+.stories p {
+  font-size: 25px;
+}
+/* fund */
+.fund p {
+  font-size: x-large;
+  color: rgb(170, 166, 166);
+}
 /* footer */
 
 #footer {
@@ -599,93 +702,4 @@ h6,
 
 #footer .credits a {
   color: #f6b024;
-}
-* {
-  box-sizing: border-box;
-}
-.mySlides1,
-.mySlides2 {
-  display: none;
-}
-img {
-  vertical-align: middle;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover,
-.next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 10px;
-  padding: 8px 12px;
-  margin-left: 10px;
-  position: absolute;
-  bottom: 8px;
-  width: 55%;
-  border-radius: 1rem;
-  text-align: center;
-}
-.links a {
-  font-size: 30px;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  color: #05579e;
-  line-height: 1;
-  padding: 10px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin: 20px;
-}
-.newsletter a {
-  color: #05579e;
-  font-size: 20px;
-}
-.newsletter {
-  font-size: 20px;
-  font-weight: 600;
-}
-.header-title {
-  border-left: 10px solid #05579e;
-  background-color: #f7f7f7;
-  margin-left: -2%;
-}
-#gallery {
-  background-color: #dedede;
 }
